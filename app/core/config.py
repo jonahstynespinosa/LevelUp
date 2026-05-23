@@ -3,7 +3,7 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     # Database
-    database_url: str = "postgresql://postgres:password@localhost:5432/levelup"
+    database_url: str = "sqlite:///./levelup.db"
 
     # Auth
     secret_key: str = "change-this-in-production"
